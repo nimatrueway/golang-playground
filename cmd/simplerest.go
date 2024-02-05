@@ -12,6 +12,7 @@ type EchoResponse struct {
 	FieldTwo int64  `json:"fieldTwo"`
 }
 
+// hello is a handler function that simulates a long-running process
 func hello(c *gin.Context) {
 	// intentional delay of 3 seconds
 	time.Sleep(3 * time.Second)
